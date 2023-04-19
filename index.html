@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Jogo da adivinhação</title>
+
+</head>
+
+<body>
+    <div class="popup" id="popupError">
+        <p>Você errou, tente novamente.</p>
+    </div>
+
+    <div class="popup" id="popupSucess">
+        <p>O número digitado, está próximo.</p>
+    </div>
+    <main>
+
+        <div class="screen1">
+            <h1>Jogo da adivinhação</h1>
+            <span>adivinhe o número entre 0 e 10</span>
+            <form action="">
+                <div class="input-group">
+                    <input type="number" name="" id="inputNumber">
+                    <button id="btnTry">Tentar</button>
+                </div>
+                <span class="errormessage hide">Campo não pode estar em branco</span>
+            </form>
+            
+        </div>
+        <div class="screen2 hide">
+            <h2>Acertou em x vezes</h2>
+            <button id="btnReset">Jogar novamente</button>
+            <span class="errormessage hide">Campo não pode estar em branco</span>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
